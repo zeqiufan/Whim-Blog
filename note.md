@@ -172,6 +172,39 @@ static修饰的变量存放在栈内存，没有static修饰的属于该类的�
    * 句柄（引用）：堆上划出一块句柄池，引用指向句柄，句柄指向实例（堆）与对象类型数据（方法区）
    * 直接指针：引用直接指向堆中实例，堆来考虑如何放置访问类型数据信息
 
-# 计算机基础
+# 计算机网络
 1. OSI七层，TCP/IP四层
 2. 
+
+# 数据结构
+1. dp
+   * 定义f(i)含义；
+   * 找到f(i)与f(i-1)的状态转移方程；
+   * 确定初始条件f(0)。
+2. dfs
+   ```java
+   void dfs(TreeNode root) {
+      if (root == null) {
+         return;
+      }
+      dfs(root.left);
+      dfs(root.right);
+   }
+   ```
+3. bfs
+   ```java
+   void bfs(TreeNode root) {
+        Queue<TreeNode> queue = new ArrayDeque<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll(); // Java 的 pop 写作 poll()
+            if (node.left != null) {
+                queue.add(node.left);
+            }
+            if (node.right != null) {
+                queue.add(node.right);
+            }
+        }
+    }
+   ```
+4. a
