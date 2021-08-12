@@ -174,7 +174,8 @@ static修饰的变量存放在栈内存，没有static修饰的属于该类的�
 
 # 计算机网络
 1. OSI七层，TCP/IP四层
-2. 
+2. session保存在服务器端，cookie保存在客户端
+
 
 # 数据结构
 1. dp
